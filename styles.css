@@ -364,7 +364,7 @@ When max-width hits 960px that's when we will trigger these classes.
 }
 
 .services__card {
-    margin: 1rem;
+    margin: 3rem;
     height: 525px;
     width: 400px;
     border-radius: 4px;
@@ -372,6 +372,14 @@ When max-width hits 960px that's when we will trigger these classes.
     background-size: cover;
     position: relative;
     color: #fff;
+}
+
+#piano__img {
+    height: inherit;
+}
+
+#walk__img {
+    height: inherit;
 }
 
  /*2nd card*/
