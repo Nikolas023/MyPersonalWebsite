@@ -233,6 +233,7 @@ When max-width hits 960px that's when we will trigger these classes.
     margin: 0 auto;
     height: 90vh;
     background-color: #141414;
+    color: white;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -240,24 +241,31 @@ When max-width hits 960px that's when we will trigger these classes.
 }
 
 /*We target main container first, then get the children in main content*/
-.main__content h1 {
-    font-size: 2.5rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 1%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
 
 .main__img--container {
     text-align: center;
 }
 
-#main__img {
-    height: 80%;
-    width: 80%;
+.main__container p {
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 20px;
+}
+
+.main__container p:nth-of-type(2) {
+    color: white;
+}
+
+.main__container p:nth-of-type(3) {
+    color: white;
+}
+
+.main__container p:nth-of-type(4) {
+    color: white;
+}
+
+.main__container p:nth-of-type(5) {
+    color: white;
 }
 
 /*To make it mobile responsive*/
@@ -278,15 +286,6 @@ When max-width hits 960px that's when we will trigger these classes.
         margin-bottom: 4rem;
     }
 
-    .main__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .main__content h2 {
-        font-size: 3rem;
-    }
-
     .main__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
@@ -296,122 +295,12 @@ When max-width hits 960px that's when we will trigger these classes.
 /*this will be for the smaller screens*/
 
 @media screen and (max-width: 480px) {
-    .main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-
-    .main__content h2 {
-        font-size: 2rem;
-    }
-
     .main__content p {
         margin-top: 2rem;
         font-size: 1.5rem;
     }
 
-    .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
-
 }
-
-
-
-/*Services Section*/
-
-
-
-.services {
-    background: #141414;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    background-size: 100%;
-    margin-bottom: 3rem;
-    font-size:2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.services .about_me {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    font-size: 1.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.services__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/piano_pic.jpg');
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-
- /*2nd card*/
-.services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/suicide_walk.jpg');
-}
-
-.services__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-}
-
-
-@media screen and (max-width: 960px) {
-    .services {
-        height: 1600px;
-    }
-
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-
-}
-
-
-@media screen and (max-width: 480px) {
-    .services {
-        height: 1400px;
-    }
-
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services__card {
-        width: 300px;
-    }
-}
-
 
 
 /*Footer CSS*/
