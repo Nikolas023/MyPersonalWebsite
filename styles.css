@@ -433,6 +433,7 @@ When max-width hits 960px that's when we will trigger these classes.
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 400px;
 }
 
 .footer__links {
