@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/7491b975cf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+        <!--for navbar you can type .(className) then tab-->
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <i class="fa-regular fa-gem"></i> Nikolas Ayala
+            </a>
+            <!--for this we typed .(className)#(idName)-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/MyPersonalWebsite/index.html" class="navbar__links">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <h1>My Computer Science Projects</h1>
+        
+        <!-- Project 1 -->
+        <div class="project">
+            <h2>Student Enrollment Application</h2>
+            <div class="project-details">
+                <p><strong>Description:</strong> Through a drag and drop feature on a web-based GUI, the application processes 24 Excel files containing student information from the 24 districts Ulster BOCES works with, stores the information from the Excel files to a Microsoft SQL server, and generates an Excel file containing enrolled students for each course per district, eliminating the manual enrollment process.
+                </p>
+                
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>SQL queries executed through Java</li>
+                    <li>Excel file generation</li>
+                    <li>Drag and drop</li>
+                </ul>
+                
+                <p><strong>Technologies Used:</strong></p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">html/css/JavaScript</span>
+                </div>
+                
+                <!-- Probably add in the future:
+                
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub Repository</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project">
+            <h2>IN PROGRESS: Roommate Matching App</h2>
+            <div class="project-details">
+                <p><strong>Description:</strong> I plan on making an app built in Flutter that helps users find roommates either in their preferred state to move to, or nearby where they reside.</p>
+                
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Match with users nearby, or match based on your selected state</li>
+                    <li>Tinder-like swiping feature</li>
+                </ul>
+                
+                <p><strong>Technologies Used:</strong></p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Flutter/Dart</span>
+                    <span class="tech-tag">Firebase</span>
+                    
+                </div>
+                
+                <!-- <div class="project-links">
+                    <a href="#" target="_blank">GitHub Repository</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
