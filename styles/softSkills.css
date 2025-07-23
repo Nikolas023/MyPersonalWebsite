@@ -223,6 +223,7 @@ When max-width hits 960px that's when we will trigger these classes.
 
 .main {
     background-color: #141414;
+    min-height: 100vh;
 }
 
 .main__container {
