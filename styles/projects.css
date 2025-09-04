@@ -292,12 +292,7 @@ h1 {
     line-height: 1.5;
 }
 
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
-}
+
 
 .tech-tag {
     background: #f77062;
@@ -405,9 +400,7 @@ h1 {
         font-size: 1.3rem;
     }
     
-    .tech-stack {
-        gap: 5px;
-    }
+   
     
     .tech-tag {
         font-size: 12px;
