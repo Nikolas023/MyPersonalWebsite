@@ -5,6 +5,11 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html, body {
+    background-color: #141414;
+    min-height: 100%;
+}
+
 
 
 /*Navbar Section*/
@@ -224,6 +229,7 @@ When max-width hits 960px that's when we will trigger these classes.
 .main {
     background-color: #141414;
     min-height: 100vh;
+    padding-bottom: 5rem; /* Add padding so footer doesn't overlap content */
 }
 
 .main__container {
