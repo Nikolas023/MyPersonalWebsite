@@ -35,42 +35,41 @@
         
         <!-- Project 1 -->
         <div class="project">
-            <h2>Student Enrollment Application</h2>
+            <h2>Student Enrollment Application <span style="font-size: 0.8em; color: #666;">(In Development)</span></h2>
             <div class="project-details">
-                <p><strong>Description:</strong> Through a drag and drop feature on a web-based GUI, the application processes 24 Excel files containing student information from the 24 districts Ulster BOCES works with, stores the information from the Excel files to a Microsoft SQL server, and generates an Excel file containing enrolled students for each course per district, eliminating the manual enrollment process.
-                </p>
+                <p><strong>Description:</strong> A web-based enrollment system that automates student data processing for 24 districts served by Ulster BOCES. The application features a drag-and-drop interface that processes Excel files containing student information, stores data in MS SQL Server, and automatically generates enrollment reports per course and district—eliminating manual data entry and streamlining the enrollment workflow.</p>
                 
-                <p><strong>Technologies and Implementation:</strong></p>
+                <p><strong>Technologies:</strong> Java, Spring Framework, JavaFX, MS SQL Server, HTML, CSS, JavaScript, JDBC, Apache POI</p>
+                
+                <p><strong>Key Features & Implementation:</strong></p>
                 <ul>
-                    <li>Integrated MS SQL Server database using Java JDBC for reliable data retrieval.</li>
-                    <li>Constructed SQL queries in Java and executed them using java.sql classes to perform CRUD operations in a MS SQL Server database.</li>
-                    <li>Utilized JavaFX classes such as WebView and WebEngine to render the web-based GUI, and JSObject to call Java functions from JavaScript and vice versa to dynamically update the UI based on user actions.</li>
-                    <li>Utilized Apache POI libraries such as Workbook and XSSFWorkbook to manipulate Excel files programmatically.</li>
+                    <li>Built with Spring MVC to handle server-side logic, RESTful endpoints, and database operations across multiple districts.</li>
+                    <li>Architected MS SQL Server database with JDBC integration, implementing optimized SQL queries for CRUD operations on approximately 2,000 student records in development.</li>
+                    <li>Designed interactive web interface using JavaFX WebView and WebEngine, with bidirectional Java-JavaScript communication via JSObject for dynamic UI updates.</li>
+                    <li>Leveraged Apache POI libraries (Workbook, XSSFWorkbook) to parse, validate, and generate Excel files programmatically.</li>
                 </ul>
-                
-                
-                
-                
             </div>
         </div>
         
         <!-- Project 2 -->
         <div class="project">
-            <h2>IN PROGRESS: Roommate Matching App</h2>
+            <h2>Roommate Matching App <span style="font-size: 0.8em; color: #666;">(In Development)</span></h2>
             <div class="project-details">
-                <p><strong>Description:</strong> I'm making an app built in Flutter that helps users find roommates either in their preferred state to move to, or nearby where they reside. Users will
-                match with people that have similar interests/preferences. Preferences are created on a user's profile. The more complete a user's profile is, the more accurate their matches will be.</p>
+                <p><strong>Description:</strong> A cross-platform mobile application (Android/iOS) that connects users with compatible roommates based on lifestyle preferences, interests, and location. The app uses a comprehensive profile system where users specify their preferences, habits, and desired living arrangements—the more complete the profile, the more accurate the match recommendations.</p>
                 
-                <p><strong>Technologies and Implementation:</strong></p>
+                <p><strong>Technologies:</strong> Flutter, Dart, Firebase, Supabase, Google Cloud Vision API, MVVM Architecture</p>
+                
+                <p><strong>Key Features & Implementation:</strong></p>
                 <ul>
-                    <li>Implementing Supabase edge functions to moderate user profile images using Google's Cloud Vision API and upload images to Supabase storage buckets.</li>
-                    <li>Using Firebase for user account creation and email verification, and Cloud Firestore to store user information.</li>
+                    <li>Integrated Supabase edge functions with Google Cloud Vision API for automated content moderation of user-uploaded profile images before storage.</li>
+                    <li>Architected Firebase authentication flow with email verification and Cloud Firestore for secure user data management.</li>
+                    <li>Implemented cloud functions for account lifecycle management, including cascading deletion of user data and assets upon account removal.</li>
+                    <li>Developed multi-tier caching strategy (in-memory, Firestore, and Supabase) to minimize API costs and improve response times.</li>
+                    <li>Following MVVM architecture principles for clean separation of concerns and maintainable codebase.</li>
                 </ul>
-                
-                
-               
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
