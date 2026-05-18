@@ -13,54 +13,57 @@
 <body>
     <div class="container">
         <nav class="navbar">
-        <!--for navbar you can type .(className) then tab-->
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo">
-                <i class="fa-regular fa-gem"></i> Nikolas Ayala
-            </a>
-            <!--for this we typed .(className)#(idName)-->
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <!-- For navbar you can type .(className) then tab -->
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">
+                    <i class="fa-regular fa-gem"></i> Nikolas Ayala
+                </a>
+                <!-- For this we typed .(className)#(idName) -->
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/MyPersonalWebsite/index.html" class="navbar__links">Home</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/MyPersonalWebsite/index.html" class="navbar__links">Home</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+
         <h1>My Computer Science Projects</h1>
-        
+
         <!-- Project 1 -->
         <div class="project">
             <h2>Student Enrollment Application</h2>
             <div class="project-details">
-                <p><strong>Description:</strong> A web-based enrollment system that automates student data processing for 24 districts served by Ulster BOCES. The application features a drag-and-drop interface that processes Excel files containing student information, stores data in MS SQL Server, and automatically generates enrollment reports per course and district—eliminating manual data entry and streamlining the enrollment workflow.</p>
-                
-                <p><strong>Technologies:</strong> Java, Spring Framework, JavaFX, MS SQL Server, HTML, CSS, JavaScript, JDBC, Apache POI</p>
-                
+                <p><strong>Description:</strong> A full-stack web application that reduced course enrollment processing from 30 days to under an hour for ~1,000 students across 24 districts served by Ulster BOCES. The system accepts Excel uploads containing student enrollment preferences, stores data in MS SQL Server, runs a demand-based seat-allocation algorithm, and automatically generates enrollment reports per course and district — replacing a manual Excel-based workflow. Deployed to Windows Server 2022 in a production environment.</p>
+
+                <p><strong>Technologies:</strong> Java, Spring Boot, Spring Security, MS SQL Server, Thymeleaf, HTML, CSS, JavaScript, JdbcTemplate, Apache POI, IIS, WinSW</p>
+
                 <p><strong>Key Features & Implementation:</strong></p>
                 <ul>
-                    <li>Built with Spring MVC to handle server-side logic, RESTful endpoints, and database operations across multiple districts.</li>
-                    <li>Architected MS SQL Server database with JDBC integration, implementing optimized SQL queries for CRUD operations on approximately 2,000 student records.</li>
-                    <li>Designed interactive web interface using JavaFX WebView and WebEngine, with bidirectional Java-JavaScript communication via JSObject for dynamic UI updates.</li>
-                    <li>Leveraged Apache POI libraries (Workbook, XSSFWorkbook) to parse, validate, and generate Excel files programmatically.</li>
+                    <li>Authored a demand-based seat-allocation algorithm that aggregates course preference counts across all districts, distributes seats proportionally by demand, fills remaining seats via round-robin, and rebalances students evenly across course sections.</li>
+                    <li>Implemented a JdbcTemplate data access layer with a multi-district schema (one SQL Server table per district), using parameterized queries and batch operations for CRUD operations across ~1,000 student records.</li>
+                    <li>Engineered a lazy DataSource that defers SQL Server connection setup to login time, dynamically configuring the connection from credentials supplied through the login form.</li>
+                    <li>Leveraged Apache POI (XSSFWorkbook) to parse and validate uploaded Excel files and generate post-enrollment reports per course and district.</li>
+                    <li>Secured the application with Spring Security: CSRF token validation, BCrypt-hashed credentials, one concurrent session per user, session invalidation on logout, and HSTS headers.</li>
+                    <li>Deployed Spring Boot as a Windows Service via WinSW with IIS configured as an HTTPS reverse proxy using ARR and URL Rewrite for SSL termination.</li>
                 </ul>
             </div>
         </div>
-        
+
         <!-- Project 2 -->
         <div class="project">
             <h2>Roomsy (Roommate Finder)</h2>
             <div class="project-details">
-                <p><strong>Project URL: </strong>&emsp;<a class="project-link" href="https://roomsy-website.nikolasa030.workers.dev/" target="_blank" rel="noopener noreferrer">Roomsy (Roommate Finder)</a></p>
+                <p><strong>Project URL:</strong>&emsp;<a class="project-link" href="https://roomsy-website.nikolasa030.workers.dev/" target="_blank" rel="noopener noreferrer">Roomsy (Roommate Finder)</a></p>
 
                 <p><strong>Description:</strong> A cross-platform mobile application (Android/iOS) that connects users with compatible roommates based on lifestyle preferences, interests, and location. The app uses a comprehensive profile system where users specify their preferences, habits, and desired living arrangements. Now released on both the App Store and Google Play Store.</p>
-                
+
                 <p><strong>Technologies:</strong> Flutter, Dart, Firebase, Google Cloud Vision API, MVVM Architecture</p>
-                
+
                 <p><strong>Key Features & Implementation:</strong></p>
                 <ul>
                     <li>Integrated Firebase Cloud Functions with Google Cloud Vision API for automated content moderation of user-uploaded profile images before storage.</li>
@@ -73,9 +76,8 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!--To target the javascript-->
+    <!-- To target the javascript -->
     <script src="../js/app.js"></script>
 </body>
 </html>
