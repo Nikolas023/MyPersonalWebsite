@@ -1,5 +1,5 @@
 # Access My Website!
-Copy and paste the link attatched:
+Copy and paste the link attached:
 https://nikolas023.github.io/MyPersonalWebsite/
 
 Check out my projects:
